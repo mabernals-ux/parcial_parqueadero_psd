@@ -2,7 +2,7 @@
 
 ## Descripción
 
-El **Parqueadero Automatizado** es un sistema integral que combina **interfaces web, base de datos y hardware** para gestionar de manera eficiente los espacios de estacionamiento. Permite controlar entradas y salidas de vehículos, asignar espacios y mantener un registro actualizado de usuarios y vehículos.  
+El **Parqueadero Automatizado** es un sistema integral que combina **interfaces web, base de datos, hardware y software** para gestionar de manera eficiente los espacios de estacionamiento. Permite controlar entradas o salidas de vehículos, asignar espacios además mantener un registro actualizado de usuarios y vehículos.  
 
 El sistema está diseñado para dos tipos de usuarios: **administradores** y **usuarios normales**, cada uno con distintas funcionalidades.
 
@@ -17,14 +17,15 @@ La interfaz de administrador permite:
 - **Asignar Espacio:** Asignar un puesto disponible a un vehículo.  
 - **Registrar Salida:** Registrar la salida de un vehículo del parqueadero.  
 - **Estado:** Consultar el estado actual de los puestos (ocupados o libres).  
-- **Listados:** Generar listados de usuarios, vehículos y movimientos.  
+- **Listados:** Generar listados de usuarios, vehículos, registro, registros de recargas.  
 - **Recargar:** Gestionar recargas o pagos relacionados al parqueadero.  
-- **Cambiar Rol:** Modificar el rol de un usuario dentro del sistema.  
+- **Cambiar Rol:** Cambiar el rol de un usuario dentro del sistema.  
 
 ### Interfaz de Usuario
 Los usuarios normales pueden:  
 - **Registrar Usuario**  
-- **Registrar Vehículo**  
+- **Registrar Vehículo**
+- **Cambiar Rol** 
 
 Todas las solicitudes de la interfaz web se envían al **backend desarrollado en Python con Flask**, que se encarga de procesarlas y almacenar la información en una **base de datos SQL**.
 
